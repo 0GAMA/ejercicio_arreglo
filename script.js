@@ -20,8 +20,26 @@ let registrarEstudiante = () => {
     }
 }
 
-let buscarEstudiante = () => { };
-let filtrarEstudiantesGanaron = () => { };
+let buscarEstudiante = () => {
+    let documentosEstudiantes = prompt("Ingrese un documento:")
+    for (let index = 0 < documentosEstudiantes.length; index++;) {
+        if (documentosEstudiantes == documentosEstudiantes[index]) {
+            console.log("Nombre: " + nombresEstudiantes[index])
+            console.log("Documento: " + documentosEstudiantes[index])
+            console.log("Nota: " + notasEstudiantes[index])
+        }
+    }
+}
+
+let filtrarEstudiantesGanaron = () => {
+    for (let index = 0; index < documentosEstudiantes.length; index++) {
+        if (notasEstudiantes[index] > 3) {
+            console.log("Nombre: " + nombresEstudiantes[index])
+            console.log("Documento: " + documentosEstudiantes[index])
+            console.log("Nota: " + notasEstudiantes[index])
+        }
+    }
+};
 let filtrarEstudiantesPerdieron = () => { };
 let filtraEstudiantesConPlanMejoramiento = () => { };
 
